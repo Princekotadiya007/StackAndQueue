@@ -15,7 +15,7 @@ namespace StackAndQueue
 
             while (flag)
             {
-                Console.WriteLine("\n1.Linkedlist Stack push");
+                Console.WriteLine("\n1.Linkedlist Stack push,\n2.Linkedlist Stack pop");
                 Console.WriteLine("choose the option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -24,6 +24,13 @@ namespace StackAndQueue
                         stack.Push(10);
                         stack.Push(20);
                         stack.Push(30);
+                        stack.Display();
+                        break;
+                    case 2:
+                        stack.Push(10);
+                        stack.Push(20);
+                        stack.Push(30);
+                        stack.Pop();
                         stack.Display();
                         break;
                 }
