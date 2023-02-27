@@ -32,6 +32,7 @@ namespace StackAndQueue
             Console.WriteLine("Value popped is {0} ", this.top.data);
             this.top = this.top.next;
         }
+
         //display the data of stack
         public void Display()
         {
