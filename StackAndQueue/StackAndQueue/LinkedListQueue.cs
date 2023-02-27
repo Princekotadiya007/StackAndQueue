@@ -9,7 +9,7 @@ namespace StackAndQueue
     public class LinkedListQueue
     {
         Node head = null;
-        internal void Enqueue(int data)
+        public void Enqueue(int data)
         {
             Node node = new Node(data);
             if (head == null)
@@ -25,6 +25,16 @@ namespace StackAndQueue
                 // node.next = head;   because of this 3rd element is not printed
             }
             Console.WriteLine("{0} inserted into queue ", node.data);
+        }
+        public void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            Node temp = this.head;
+            this.head = this.head.next;
+            Console.WriteLine("\nItem deleted is {0}", temp.data);
         }
         //display from queue
         public void Display()
